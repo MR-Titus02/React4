@@ -2,7 +2,6 @@
   "name": "react4",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://mr-titus02.github.io/React4/",
   "type": "module",
   "scripts": {
     "dev": "vite",
