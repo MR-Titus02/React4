@@ -13,6 +13,7 @@ function App() {
     <>
     
       <Routes>
+        <Route path="/React4" element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
