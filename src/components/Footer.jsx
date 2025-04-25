@@ -1,13 +1,16 @@
 function Footer() {
-    return(
+  return (
     <>
-     <footer className="navi fixed-bottom shadow" >
-        <ul style={{liststyle: "none"}} className="d-flex justify-content-around mb-0 p-3">
-            <li>&copy; Copyright @2022. All rights reserved.</li>
-            <li>Designed by Titus</li>
+      <footer className="navi fixed-bottom shadow bg-dark text-light">
+        <ul
+          className="d-flex justify-content-around align-items-center mb-0 p-3 w-100"
+          style={{ listStyle: "none" }}
+        >
+          <li>&copy; {new Date().getFullYear()} All rights reserved.</li>
+          <li>Designed by Titus</li>
         </ul>
-    </footer>
+      </footer>
     </>
-    )
+  );
 }
 export default Footer;

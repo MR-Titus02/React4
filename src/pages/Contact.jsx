@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Header";
+import Footer from "../components/Footer";
 function Contact() {
   return (
     <>
@@ -26,6 +27,7 @@ function Contact() {
         </button>
       </form>
     </div>
+    <Footer/>
     </>
   );
 }

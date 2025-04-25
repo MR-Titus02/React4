@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "../components/Header";
-import Adventure from "../assets/images/camping.svg";
-import CartoonMonster from "../assets/images/monster.svg";
-import Superhero from "../assets/images/hero.svg";
-import Wizard from "../assets/images/magic.svg";
-import Robotics from "../assets/images/robotics.svg";
+import Adventure from "../assets/camping.svg";
+import CartoonMonster from "../assets/monster.svg";
+import Superhero from "../assets/hero.svg";
+import Wizard from "../assets/magic.svg";
+import Robotics from "../assets/robo.svg";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -23,18 +24,19 @@ function Home() {
         </div>
         <div className="col-md-6">
           <img
-            src={{Adventure}}
+            src={Adventure}
             alt="Adventure"
             className="img-fluid"
           />
         </div>
       </div>
+      
 
       {/* About Section */}
       <div className="row align-items-center mb-5">
         <div className="col-md-6">
           <img
-            src={{CartoonMonster}}
+            src={CartoonMonster}
             alt="About"
             className="img-fluid"
           />
@@ -56,11 +58,12 @@ function Home() {
         </h2>
         <div className="row g-4">
           <div className="col-md-4">
-            <div className="card h-100 border border-dark">
+            <div className="card h-50 border border-dark">
               <img
-                src={{Superhero}}
+                src={Superhero}
                 className="card-img-top p-4"
                 alt="Hero"
+                style={{height: "400px"}}
               />
               <div className="card-body">
                 <h5 className="card-title">Captain Code</h5>
@@ -69,9 +72,9 @@ function Home() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card h-100 border border-dark">
+            <div className="card h-50 border border-dark" >
               <img
-                src={{Wizard}}
+                src={Wizard}
                 className="card-img-top p-4"
                 alt="Wizard"
               />
@@ -82,9 +85,9 @@ function Home() {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card h-100 border border-dark">
+            <div className="card h-50 border border-dark">
               <img
-                src={{Robotics}}
+                src={Robotics}
                 className="card-img-top p-4"
                 alt="Robot"
               />
@@ -108,7 +111,7 @@ function Home() {
         </button>
       </div>
     </div>
-    
+    <Footer/>
   </>
   );
 }
