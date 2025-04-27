@@ -5,7 +5,7 @@ function Contact() {
   return (
     <>
     <Navbar/>
-    <div className="container py-5">
+    <div className="container py-5 " >
       <h2 className="text-primary fw-bold mb-4">
         <i className="bi bi-chat-left-dots-fill me-2"></i>Get in Touch
       </h2>
